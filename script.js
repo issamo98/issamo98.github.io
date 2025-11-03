@@ -19,7 +19,7 @@
 
   const copyBtn = document.getElementById("copyEmail");
   const notif = document.getElementById("copyNotif");
-  const email = "issamzitouni27@gmail.com"; // Replace with your real email
+  const email = "contact@builtbyissam.pro"; // Replace with your real email
 
   copyBtn.addEventListener("click", () => {
     navigator.clipboard.writeText(email).then(() => {
@@ -55,4 +55,5 @@ sliders.forEach(slider => {
     images[index].classList.add('active');
   }, 2500); // change every 2.5s
 });
+
 
