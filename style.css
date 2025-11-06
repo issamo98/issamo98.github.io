@@ -154,17 +154,7 @@ body {
   transform: translateY(-7.5px) rotate(-45deg);
 }
 
-/* ===== RESPONSIVE RULES ===== */
-@media (max-width: 768px) {
-  .nav,
-  .cta-btn {
-    display: none;
-  }
 
-  .menu-toggle {
-    display: flex;
-  }
-}
 
 
 /* ===== HERO SECTION ===== */
@@ -581,5 +571,36 @@ body {
 
 .back-to-top:hover {
   color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .nav,
+  .cta-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text p {
+    text-align: justify;
+  }
+
+  .about-image img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .about-text h2 {
+    margin-top: 1.5rem;
+  }
 }
 
