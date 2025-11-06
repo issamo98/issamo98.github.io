@@ -56,4 +56,21 @@ sliders.forEach(slider => {
   }, 2500); // change every 2.5s
 });
 
+ const menuToggle = document.getElementById("menu-toggle");
+  const mobileNav = document.getElementById("mobile-nav");
+
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    mobileNav.classList.toggle("active");
+  });
+
+  // Auto-close when clicking a link
+  document.querySelectorAll(".mobile-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("active");
+      menuToggle.classList.remove("active");
+    });
+  });
+
+
 
